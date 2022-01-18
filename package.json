@@ -2,6 +2,8 @@
   "name": "node-complete-social-network-prep",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://hleppps.github.io/shop-project-react/",
+
   "dependencies": {
     "@apollo/client": "^3.5.4",
     "graphql": "^16.0.1",
@@ -12,6 +14,8 @@
     "socket.io-client": "^4.3.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -25,5 +29,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }
